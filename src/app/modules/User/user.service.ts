@@ -235,7 +235,7 @@ const updateProfile = async (
   return updatedUser;
 };
 
-//===========Soft Delete User==============
+//===========Soft Delete User=================
 const softDeleteUser = async (email: string) => {
   const user = await prisma.user.findUnique({
     where: { email },
